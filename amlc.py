@@ -11,7 +11,7 @@ def add_new_state(transition_table, input_counter, qx_0, qx_1):
 
 def add_final_states(transition_table):
     while True:
-        final_state_code = str(input("\n\n\nFinal state (insert !end! to stop adding final states): q"))
+        final_state_code = str(input("\nFinal state (insert !end! to stop adding final states): q"))
         if final_state_code == "!end!":
             break
         else:
@@ -70,7 +70,9 @@ def main():
     transition_table = [[]]
     input_counter = 0
 
-    print("Welcome to this autonomous machine calculator!\n")
+    print("===================================================")
+    print("Welcome to Autonomous Machine Language calculator!")
+    print("===================================================\n")
     print("This software take a DFA and an Input and it will verify")
     print("that the Input is accepted by the DFA")
 
