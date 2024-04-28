@@ -9,7 +9,7 @@ To use the program:
 1. Run the program.
 2. Follow the prompts to input transitions for each state of the DFA, denoted as `q0`, `q1`, etc.
 3. Input `!end!` to stop adding transitions for each state.
-4. Add final states by inputting `q` followed by the state number, then input `!end!` to stop.
+4. Add final states by inputting the state number of the final states, then input `!end!` to stop.
 5. Once the DFA is defined, input binary strings when prompted to check if they are accepted by the DFA.
 6. Input `!end!` to stop the program.
 
