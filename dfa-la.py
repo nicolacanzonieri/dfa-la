@@ -70,9 +70,9 @@ def main():
     transition_table = [[]]
     input_counter = 0
 
-    print("===================================================")
-    print("Welcome to Autonomous Machine Language calculator!")
-    print("===================================================\n")
+    print("===========================================")
+    print("DFA Language Analyzer by Nicola Canzonieri")
+    print("===========================================\n")
     print("This software take a DFA and an Input and it will verify")
     print("that the Input is accepted by the DFA")
 
