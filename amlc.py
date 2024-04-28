@@ -9,6 +9,14 @@ def add_new_state(transition_table, input_counter, qx_0, qx_1):
         new_state_operations = [int(qx_0), int(qx_1)]
         transition_table[input_counter].extend(new_state_operations)
 
+def add_final_states(transition_table):
+    while True:
+        final_state_code = str(input("\n\n\nFinal state (insert !end! to stop adding final states): q"))
+        if final_state_code == "!end!":
+            break
+        else:
+            transition_table[int(final_state_code)].append("x")
+
 def create_transition_table(transition_table, input_counter):
     while True:
         print("\n\nSTATE Q" + str(input_counter) + " - (Insert !end! to stop creating new states)\n")
@@ -25,8 +33,7 @@ def create_transition_table(transition_table, input_counter):
         
         input_counter += 1
     
-    final_state_code = int(input("\n\n\nFinal state: q"))
-    transition_table[final_state_code].append("x")
+    add_final_states(transition_table)
     if debug : print(transition_table)
 
 def run_dfa(transition_table, dfa_input):
